@@ -13,7 +13,7 @@ sudo apt install xfwm4 tint2 rofi feh
 
 ```
 git clone https://github.com/rhino-linux/unicorn
-unicorn
+cd unicorn
 mv .xinitrc ~/
 mv .config/* ~/.config
 sudo mv icons/* /usr/share/icons
