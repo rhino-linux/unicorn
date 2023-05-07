@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<channel name="xfdashboard" version="1.0">
+  <property name="theme" type="string" value="xfdashboard-auber"/>
+  <property name="enabled-plugins" type="array">
+    <value type="string" value="clock-view"/>
+    <value type="string" value="gnome-shell-search-provider"/>
+    <value type="string" value="recently-used-search-provider"/>
+  </property>
+</channel>

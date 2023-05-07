@@ -1,0 +1,10 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=Rofi
+Comment=
+Exec=rofi -show drun -show-icons
+Icon=uniApps
+Path=
+Terminal=false
+StartupNotify=false
