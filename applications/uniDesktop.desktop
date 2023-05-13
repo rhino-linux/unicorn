@@ -1,7 +1,7 @@
 [Desktop Entry]
 Version=1.0
 Type=Application
-Name=uniDesktop
+Name=Desktop Switcher
 Comment=Maybe a Gnome shell like dashboard for Xfce
 Exec=/usr/bin/xfdashboard
 Icon=uniDesktop
