@@ -1,0 +1,13 @@
+[Desktop Entry]
+Encoding=UTF-8
+Version=1.0
+Type=Application
+Name=Plank Theme
+Comment=Themeing for Plank
+Exec=bash -c "cat /usr/share/plank/docks.ini | dconf load /net/launchpad/plank/docks/"
+OnlyShowIn=XFCE;
+RunHook=0
+StartupNotify=false
+Terminal=false
+Hidden=false
+
