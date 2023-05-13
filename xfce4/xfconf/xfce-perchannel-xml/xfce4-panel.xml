@@ -12,12 +12,22 @@
       <property name="icon-size" type="uint" value="16"/>
       <property name="size" type="uint" value="38"/>
       <property name="plugin-ids" type="array">
+        <value type="int" value="15"/>
         <value type="int" value="5"/>
+        <value type="int" value="12"/>
+        <value type="int" value="8"/>
         <value type="int" value="4"/>
         <value type="int" value="7"/>
-        <value type="int" value="12"/>
         <value type="int" value="1"/>
-        <value type="int" value="15"/>
+      </property>
+      <property name="enter-opacity" type="uint" value="93"/>
+      <property name="leave-opacity" type="uint" value="93"/>
+      <property name="background-style" type="uint" value="1"/>
+      <property name="background-rgba" type="array">
+        <value type="double" value="0.082714666666666659"/>
+        <value type="double" value="0.05373333333333332"/>
+        <value type="double" value="0.13"/>
+        <value type="double" value="1"/>
       </property>
     </property>
   </property>
@@ -26,9 +36,15 @@
       <property name="style" type="uint" value="0"/>
       <property name="expand" type="bool" value="true"/>
     </property>
-    <property name="plugin-12" type="string" value="clock"/>
+    <property name="plugin-12" type="string" value="clock">
+      <property name="digital-date-format" type="string" value="%d %b %Y"/>
+      <property name="digital-layout" type="uint" value="3"/>
+      <property name="digital-time-format" type="string" value="%a %b %d  %Y   %_I:%M %p"/>
+      <property name="digital-time-font" type="string" value="Ubuntu Medium 14"/>
+    </property>
     <property name="plugin-4" type="string" value="systray">
       <property name="known-legacy-items" type="array">
+        <value type="string" value="networkmanager applet"/>
         <value type="string" value="network"/>
         <value type="string" value="ibus panel"/>
       </property>
@@ -38,6 +54,13 @@
       <property name="hidden-items" type="array">
       </property>
       <property name="square-icons" type="bool" value="true"/>
+      <property name="hidden-legacy-items" type="array">
+        <value type="string" value="networkmanager applet"/>
+      </property>
+      <property name="symbolic-icons" type="bool" value="true"/>
+      <property name="single-row" type="bool" value="false"/>
+      <property name="hide-new-items" type="bool" value="false"/>
+      <property name="icon-size" type="int" value="22"/>
     </property>
     <property name="plugin-7" type="string" value="notification-plugin"/>
     <property name="plugin-15" type="string" value="launcher">
@@ -47,6 +70,10 @@
     </property>
     <property name="plugin-1" type="string" value="separator">
       <property name="style" type="uint" value="0"/>
+    </property>
+    <property name="plugin-8" type="string" value="separator">
+      <property name="style" type="uint" value="0"/>
+      <property name="expand" type="bool" value="true"/>
     </property>
   </property>
 </channel>
