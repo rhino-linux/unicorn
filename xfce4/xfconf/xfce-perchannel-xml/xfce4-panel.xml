@@ -65,7 +65,7 @@
     <property name="plugin-7" type="string" value="notification-plugin"/>
     <property name="plugin-15" type="string" value="launcher">
       <property name="items" type="array">
-        <value type="string" value="16836668026.desktop"/>
+        <value type="string" value="uniOut.desktop"/>
       </property>
     </property>
     <property name="plugin-1" type="string" value="separator">
