@@ -1,7 +1,7 @@
 [Desktop Entry]
 Version=1.0
 Type=Application
-Name=uniApps
+Name=Application Grid
 Comment=
 Exec=rofi -show drun -show-icons
 Icon=uniApps
