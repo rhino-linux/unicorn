@@ -5,6 +5,7 @@ configuration {
   drun-display-format: "{name}";
   font: "Ubuntu Medium 11";
   modi: "window,run,drun";
+  show-icons: true;
 }
 
 @theme "/dev/null"
