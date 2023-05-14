@@ -8,3 +8,4 @@ Icon=uniDesktop
 Path=
 Terminal=false
 StartupNotify=false
+NotShowIn=XFCE;Unity;KDE;GNOME;
