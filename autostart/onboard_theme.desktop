@@ -1,0 +1,12 @@
+[Desktop Entry]
+Encoding=UTF-8
+Version=1.0
+Type=Application
+Name=Onboard Theme
+Comment=Themeing for Onboard
+Exec=bash -c "cat /usr/share/onboard/onboard.ini | dconf load /org/onboard/"
+OnlyShowIn=XFCE;
+RunHook=0
+StartupNotify=false
+Terminal=false
+Hidden=false
