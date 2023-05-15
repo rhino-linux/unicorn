@@ -5,7 +5,6 @@ Type=Application
 Name=Papirus Theme
 Comment=Unicorn default icons
 Exec=bash -c "xfconf-query -c xsettings -p /Net/IconThemeName -s Papirus-Dark"
-NotShowIn=XFCE;Unity;KDE;GNOME;
 RunHook=0
 StartupNotify=false
 Terminal=false
