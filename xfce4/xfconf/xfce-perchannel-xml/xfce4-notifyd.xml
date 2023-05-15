@@ -9,6 +9,7 @@
     <property name="known_applications" type="array">
       <value type="string" value="notify-send"/>
       <value type="string" value="ulauncher"/>
+      <value type="string" value="xfce4-power-manager"/>
       <value type="string" value="xfce4-settings-helper"/>
     </property>
   </property>
