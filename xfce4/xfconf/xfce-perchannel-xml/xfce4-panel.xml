@@ -21,7 +21,7 @@
         <value type="int" value="4"/>
         <value type="int" value="1"/>
         <value type="int" value="3"/>
-        <value type="int" value="2"/>
+        <value type="int" value="9"/>
       </property>
       <property name="enter-opacity" type="uint" value="93"/>
       <property name="leave-opacity" type="uint" value="93"/>
@@ -64,7 +64,6 @@
       <property name="square-icons" type="bool" value="true"/>
       <property name="hidden-legacy-items" type="array">
         <value type="string" value="networkmanager applet"/>
-        <value type="string" value="onboard"/>
       </property>
       <property name="symbolic-icons" type="bool" value="true"/>
       <property name="single-row" type="bool" value="false"/>
@@ -84,7 +83,6 @@
       <property name="style" type="uint" value="0"/>
       <property name="expand" type="bool" value="true"/>
     </property>
-    <property name="plugin-2" type="string" value="battery"/>
     <property name="plugin-3" type="string" value="pulseaudio">
       <property name="enable-keyboard-shortcuts" type="bool" value="true"/>
     </property>
@@ -92,5 +90,6 @@
       <property name="style" type="uint" value="0"/>
       <property name="expand" type="bool" value="true"/>
     </property>
+    <property name="plugin-9" type="string" value="power-manager-plugin"/>
   </property>
 </channel>
