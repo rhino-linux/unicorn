@@ -61,8 +61,8 @@
       <property name="&lt;Super_L&gt;s" type="string" value="ulauncher --hide-window"/>
       <property name="&lt;Super&gt;a" type="string" value="lightpad"/>
       <property name="&lt;Super_L&gt;a" type="string" value="lightpad"/>
-      <property name="&lt;Super&gt;a" type="string" value="xfdashboard"/>
-      <property name="&lt;Super_L&gt;a" type="string" value="xfdashboard"/>
+      <property name="&lt;Super&gt;d" type="string" value="xfdashboard"/>
+      <property name="&lt;Super_L&gt;d" type="string" value="xfdashboard"/>
     </property>
   </property>
   <property name="xfwm4" type="empty">
