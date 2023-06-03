@@ -12,6 +12,7 @@
       <property name="icon-size" type="uint" value="22"/>
       <property name="size" type="uint" value="38"/>
       <property name="plugin-ids" type="array">
+        <value type="int" value="15"/>
         <value type="int" value="3"/>
         <value type="int" value="12"/>
         <value type="int" value="5"/>
@@ -20,7 +21,6 @@
         <value type="int" value="7"/>
         <value type="int" value="2"/>
         <value type="int" value="6"/>
-        <value type="int" value="15"/>
         <value type="int" value="1"/>
       </property>
       <property name="enter-opacity" type="uint" value="93"/>
