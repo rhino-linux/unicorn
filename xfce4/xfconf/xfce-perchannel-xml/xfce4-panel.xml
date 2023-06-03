@@ -13,11 +13,14 @@
       <property name="size" type="uint" value="38"/>
       <property name="plugin-ids" type="array">
         <value type="int" value="15"/>
-        <value type="int" value="5"/>
+        <value type="int" value="3"/>
         <value type="int" value="12"/>
+        <value type="int" value="5"/>
         <value type="int" value="8"/>
         <value type="int" value="4"/>
         <value type="int" value="7"/>
+        <value type="int" value="2"/>
+        <value type="int" value="9"/>
         <value type="int" value="1"/>
       </property>
       <property name="enter-opacity" type="uint" value="93"/>
@@ -49,9 +52,12 @@
         <value type="string" value="ibus panel"/>
       </property>
       <property name="known-items" type="array">
+        <value type="string" value="chrome_status_icon_1"/>
+        <value type="string" value="blueman"/>
         <value type="string" value="nm-applet"/>
       </property>
       <property name="hidden-items" type="array">
+        <value type="string" value="nm-applet"/>
       </property>
       <property name="square-icons" type="bool" value="true"/>
       <property name="hidden-legacy-items" type="array">
@@ -61,6 +67,7 @@
       <property name="single-row" type="bool" value="false"/>
       <property name="hide-new-items" type="bool" value="false"/>
       <property name="icon-size" type="int" value="22"/>
+      <property name="menu-is-primary" type="bool" value="false"/>
     </property>
     <property name="plugin-7" type="string" value="notification-plugin"/>
     <property name="plugin-15" type="string" value="launcher">
@@ -75,5 +82,13 @@
       <property name="style" type="uint" value="0"/>
       <property name="expand" type="bool" value="true"/>
     </property>
+    <property name="plugin-3" type="string" value="separator">
+      <property name="expand" type="bool" value="false"/>
+      <property name="style" type="uint" value="0"/>
+    </property>
+    <property name="plugin-2" type="string" value="pulseaudio">
+      <property name="enable-keyboard-shortcuts" type="bool" value="true"/>
+    </property>
+    <property name="plugin-9" type="string" value="power-manager-plugin"/>
   </property>
 </channel>
