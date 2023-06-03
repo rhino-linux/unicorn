@@ -18,6 +18,7 @@
         <value type="int" value="8"/>
         <value type="int" value="4"/>
         <value type="int" value="7"/>
+        <value type="int" value="2"/>
         <value type="int" value="6"/>
         <value type="int" value="15"/>
         <value type="int" value="1"/>
@@ -86,5 +87,8 @@
       <property name="style" type="uint" value="0"/>
     </property>
     <property name="plugin-6" type="string" value="battery"/>
+    <property name="plugin-2" type="string" value="pulseaudio">
+      <property name="enable-keyboard-shortcuts" type="bool" value="true"/>
+    </property>
   </property>
 </channel>
