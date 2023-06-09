@@ -1,7 +1,7 @@
-#!/usr/bin/bash
+#!/bin/bash
 
-BASE_XFCE_DIR="$HOME/.config/xfce4/"
-BASE_UNICORN_DIR="$HOME/.config/unicorn/"
+export BASE_XFCE_DIR="$HOME/.config/xfce4/"
+export BASE_UNICORN_DIR="$HOME/.config/unicorn/"
 
 # In case user doesn't have their configs
 if ! [[ -d "$BASE_UNICORN_DIR" ]]; then
@@ -13,7 +13,7 @@ fi
 mv -f $BASE_XFCE_DIR $HOME/.config/xfce4_old
 cp -r $BASE_UNICORN_DIR $BASE_XFCE_DIR
 
-/usr/bin/startxfce4
+exec -c /usr/bin/startxfce4
 
 # Revert configs after
 rm -rf $HOME/.config/xfce4
