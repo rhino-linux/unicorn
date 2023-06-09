@@ -10,12 +10,15 @@ if ! [[ -d "$BASE_UNICORN_DIR" ]]; then
 fi
 
 # Replace config
-mv -f $BASE_XFCE_DIR $HOME/.config/xfce4_old
+if ! [[ -d "$HOME/.config/xfce4_old" ]]; then
+  mkdir -p "$HOME/.config/xfce4_old"
+fi
+mv -f $BASE_XFCE_DIR "$HOME/.config/xfce4_old"
 cp -r $BASE_UNICORN_DIR $BASE_XFCE_DIR
 
 exec -c /usr/bin/startxfce4
 
 # Revert configs after
-rm -rf $HOME/.config/xfce4
-mv -f $HOME/.config/xfce4_old $BASE_XFCE_DIR
+rm -rf "$HOME/.config/xfce4"
+mv -f "$HOME/.config/xfce4_old" $BASE_XFCE_DIR
 exit 0
