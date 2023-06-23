@@ -7,4 +7,5 @@
     <value type="string" value="gnome-shell-search-provider"/>
     <value type="string" value="recently-used-search-provider"/>
   </property>
+  <property name="enable-animations" type="bool" value="false"/>
 </channel>
