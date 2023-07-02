@@ -1,7 +1,7 @@
 [Desktop Entry]
 Version=1.0
-_Name=Unicorn Session
-_Comment=Use this session to run Unicorn as your desktop environment
+Name=Unicorn Session
+Comment=Use this session to run Unicorn as your desktop environment
 Exec=startunicorn
 Icon=
 Type=Application
