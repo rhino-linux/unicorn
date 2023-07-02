@@ -5,4 +5,4 @@ _Comment=Use this session to run Unicorn as your desktop environment
 Exec=startunicorn
 Icon=
 Type=Application
-DesktopNames=XFCE
+DesktopNames=Unicorn
