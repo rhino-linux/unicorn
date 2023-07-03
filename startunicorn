@@ -110,5 +110,5 @@ elif [[ -f $HOME/.xfce4/xinitrc ]]; then
     cp $HOME/.xfce4/xinitrc $BASEDIR/
     exec $prog $BASEDIR/xinitrc $CLIENTRC $SERVERRC
 else
-    exec $prog /etc/xdg/unicorn/xinitrc $CLIENTRC $SERVERRC
+    exec $prog /etc/xdg/xdg-unicorn/xinitrc $CLIENTRC $SERVERRC
 fi
