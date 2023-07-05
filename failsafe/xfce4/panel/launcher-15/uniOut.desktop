@@ -1,0 +1,10 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=Log Out
+Comment=Log out of the Unicorn Desktop
+Exec=xfce4-session-logout
+Icon=uniOut
+Path=
+Terminal=false
+StartupNotify=false
