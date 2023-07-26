@@ -12,7 +12,6 @@
     <property name="SoundThemeName" type="empty"/>
     <property name="EnableEventSounds" type="empty"/>
     <property name="EnableInputFeedbackSounds" type="empty"/>
-    <property name="FallbackIconTheme" type="empty"/>
   </property>
   <property name="Xft" type="empty">
     <property name="DPI" type="empty"/>
