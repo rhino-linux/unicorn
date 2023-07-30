@@ -69,6 +69,7 @@
       <property name="single-row" type="bool" value="false"/>
       <property name="hide-new-items" type="bool" value="false"/>
       <property name="icon-size" type="int" value="22"/>
+      <property name="menu-is-primary" type="bool" value="false"/>
     </property>
     <property name="plugin-7" type="string" value="notification-plugin"/>
     <property name="plugin-15" type="string" value="launcher">

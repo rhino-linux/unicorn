@@ -1,0 +1,41 @@
+{
+    "fadbb08e-9b58-4311-95be-b61e26b09fe6": {
+        "id": "fadbb08e-9b58-4311-95be-b61e26b09fe6",
+        "name": "Duck Duck Go",
+        "keyword": "d",
+        "cmd": "https://duckduckgo.com/%s",
+        "icon": "/usr/share/icons/duckduckgo.png",
+        "is_default_search": true,
+        "run_without_argument": false,
+        "added": 1684439459.1836133
+    },
+    "c4481c5c-6dee-4b70-9153-955ece544a78": {
+        "id": "c4481c5c-6dee-4b70-9153-955ece544a78",
+        "name": "Stack Overflow",
+        "keyword": "so",
+        "cmd": "https://stackoverflow.com/search?q=%s",
+        "icon": "/usr/share/ulauncher/media/stackoverflow-icon.svg",
+        "is_default_search": true,
+        "run_without_argument": false,
+        "added": 1684439459.1836197
+    },
+    "be0e6cf8-bed2-4274-88e1-9f548484e0e5": {
+        "id": "be0e6cf8-bed2-4274-88e1-9f548484e0e5",
+        "name": "GitHub",
+        "keyword": "gi",
+        "cmd": "https://github.com/search?q=%s",
+        "icon": "/usr/share/icons/github-logo.png",
+        "is_default_search": true,
+        "run_without_argument": false,
+        "added": 1684439459.1836245
+    },
+    "f95ed6e7-7e16-41f5-9a15-ed3ef6a74b35": {
+        "id": "f95ed6e7-7e16-41f5-9a15-ed3ef6a74b35",
+        "name": "Rhino Linux | Website",
+        "keyword": "rh",
+        "cmd": "rhinolinux.org/",
+        "icon": "/usr/share/icons/logo.png",
+        "is_default_search": false,
+        "run_without_argument": true,
+        "added": 1684440012.4676385
+    }
