@@ -4,7 +4,7 @@
   <property name="xfce4-power-manager" type="empty">
     <property name="power-button-action" type="empty"/>
     <property name="lock-screen-suspend-hibernate" type="empty"/>
-    <property name="logind-handle-lid-switch" type="empty"/>
+    <property name="logind-handle-lid-switch" type="bool" value="true"/>
     <property name="blank-on-ac" type="empty"/>
     <property name="blank-on-battery" type="empty"/>
     <property name="dpms-enabled" type="empty"/>
