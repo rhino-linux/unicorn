@@ -1,0 +1,16 @@
+<?xml version="1.0" ?>
+<theme name="Droid" format="1.3">
+  <color_scheme>HighContrastInverseBlack</color_scheme>
+  <background_gradient>0.0</background_gradient>
+  <key_style>flat</key_style>
+  <roundrect_radius>40.0</roundrect_radius>
+  <key_size>98.0</key_size>
+  <key_stroke_width>0.0</key_stroke_width>
+  <key_fill_gradient>4.0</key_fill_gradient>
+  <key_stroke_gradient>15.0</key_stroke_gradient>
+  <key_gradient_direction>-5.0</key_gradient_direction>
+  <key_label_font></key_label_font>
+  <key_label_overrides/>
+  <key_shadow_strength>0.0</key_shadow_strength>
+  <key_shadow_size>0.0</key_shadow_size>
+</theme>
