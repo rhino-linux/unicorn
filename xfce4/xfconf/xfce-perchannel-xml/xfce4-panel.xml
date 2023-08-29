@@ -13,14 +13,15 @@
       <property name="size" type="uint" value="38"/>
       <property name="plugin-ids" type="array">
         <value type="int" value="15"/>
+        <value type="int" value="6"/>
         <value type="int" value="3"/>
-        <value type="int" value="12"/>
         <value type="int" value="5"/>
         <value type="int" value="8"/>
         <value type="int" value="4"/>
         <value type="int" value="7"/>
         <value type="int" value="2"/>
         <value type="int" value="9"/>
+        <value type="int" value="12"/>
         <value type="int" value="1"/>
       </property>
       <property name="enter-opacity" type="uint" value="93"/>
@@ -42,7 +43,7 @@
     <property name="plugin-12" type="string" value="clock">
       <property name="digital-date-format" type="string" value="%d %b %Y"/>
       <property name="digital-layout" type="uint" value="3"/>
-      <property name="digital-time-format" type="string" value="%a %b %d  %Y   %_I:%M %p"/>
+      <property name="digital-time-format" type="string" value="%a %b %d  %Y  %_I:%M %p"/>
       <property name="digital-time-font" type="string" value="Ubuntu Medium 14"/>
     </property>
     <property name="plugin-4" type="string" value="systray">
@@ -90,5 +91,14 @@
       <property name="enable-keyboard-shortcuts" type="bool" value="true"/>
     </property>
     <property name="plugin-9" type="string" value="power-manager-plugin"/>
+    <property name="plugin-6" type="string" value="appmenu">
+      <property name="plugins" type="empty">
+        <property name="plugin-6" type="empty">
+          <property name="compact-mode" type="bool" value="false"/>
+          <property name="bold-application-name" type="bool" value="true"/>
+          <property name="expand" type="bool" value="false"/>
+        </property>
+      </property>
+    </property>
   </property>
 </channel>
