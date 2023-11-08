@@ -10,7 +10,7 @@
 tiling_enabled = false
 
 # Initial tiling layout ("fullscreen" | "vertical-left" | "vertical-right" | "horizontal-top" | "horizontal-bottom").
-tiling_layout = "vertical-right"
+tiling_layout = "vertical-left"
 
 # An overlay window is displayed for this time period [ms] when the layout was changed (0 = disabled).
 tiling_gui = 1500
@@ -45,6 +45,11 @@ window_ignore = [
     ['wrapper.*', ''],
     ['lightdm.*', ''],
     ['blueman.*', ''],
+    ['plank', ''],
+    ['xfce4-panel', ''],
+    ['rhinosystem', ''],
+    ['ulauncher', ''],
+    ['Ulauncher', ''],
     ['pavucontrol.*', ''],
     ['firefox.*', '.*Mozilla Firefox'],
 ]
@@ -64,7 +69,7 @@ window_decoration = true
 ################################## Proportion ##################################
 
 # Initial division of master-slave area (0.0 - 1.0).
-proportion = 0.6
+proportion = 0.5
 
 # How much to increment/decrement master-slave area (0.0 - 1.0).
 proportion_step = 0.05
@@ -75,7 +80,7 @@ proportion_min = 0.2
 ##################################### Edge #####################################
 
 # Additional margin of the tiling area ([top, right, bottom, left]).
-edge_margin = [0, 0, 0, 0]
+edge_margin = [0, 0, 0, 65]
 
 # Width and height of a hot-corner area within the edge corners (0 - 100).
 edge_corner_size = 10
@@ -97,7 +102,7 @@ gui_background = [30, 30, 40, 255]
 gui_client_slave = [58, 58, 78, 255]
 
 # Layout master client rectangle color.
-gui_client_master = [98, 98, 128, 255]
+gui_client_master = [189, 147, 249, 255]
 
 # Systray icon background color.
 icon_background = [0, 0, 0, 0]
@@ -109,65 +114,65 @@ icon_foreground = [255, 255, 255, 255]
 [keys]                            # Key symbols can be found by running 'xev'. #
 ################################################################################
 
-# Enable tiling on the current screen (Home = Fn_Left).
-enable = "Control-Shift-Home"
+# Enable tiling on the current screen.
+enable = "Mod4-Shift-T"
 
-# Disable tiling on the current screen (End = Fn_Right).
-disable = "Control-Shift-End"
+# Disable tiling on the current screen.
+disable = "Control-Shift-Home"
 
 # Disable tiling and restore windows on the current screen.
-restore = "Control-Shift-R"
+restore = "Control-Shift-End"
 
 # Toggle between enable and disable on the current screen.
-toggle = "Control-Shift-T"
+toggle = "Mod4-Shift-Y"
 
-# Cycles through next layouts (Next = Page_Down).
+# Cycles through next layouts.
 cycle_next = "Control-Shift-Next"
 
-# Cycles through previous layouts (Prior = Page_Up).
+# Cycles through previous layouts.
 cycle_previous = "Control-Shift-Prior"
 
-# Activates the fullscreen layout (Space = Blank).
+# Activates the fullscreen layout.
 layout_fullscreen = "Control-Shift-Space"
 
-# Activates the vertical-left layout (Left = Arrow_Left).
+# Activates the vertical-left layout.
 layout_vertical_left = "Control-Shift-Left"
 
-# Activates the vertical-right layout (Right = Arrow_Right).
+# Activates the vertical-right layout.
 layout_vertical_right = "Control-Shift-Right"
 
-# Activates the horizontal-top layout (Up = Arrow_Up).
+# Activates the horizontal-top layout.
 layout_horizontal_top = "Control-Shift-Up"
 
-# Activates the horizontal-bottom layout (Down = Arrow_Down).
+# Activates the horizontal-bottom layout.
 layout_horizontal_bottom = "Control-Shift-Down"
 
 # Make the active window a master.
-master_make = "Control-Shift-M"
+master_make = "Mod1-Shift-M"
 
-# Increase the number of masters (Plus = +).
+# Increase the number of masters.
 master_increase = "Control-Shift-Plus"
 
-# Decrease the number of masters (Minus = -).
+# Decrease the number of masters.
 master_decrease = "Control-Shift-Minus"
 
-# Increase the number of slaves (KP_Add = Num_+).
+# Increase the number of slaves.
 slave_increase = "Control-Shift-KP_Add"
 
-# Decrease the number of slaves (KP_Subtract = Num_-).
+# Decrease the number of slaves.
 slave_decrease = "Control-Shift-KP_Subtract"
 
-# Increase the proportion of master-slave area (KP_6 = Num_6).
-proportion_increase = "Control-Shift-KP_6"
+# Increase the proportion of master-slave area.
+proportion_increase = "Mod1-Shift-L"
 
-# Decrease the proportion of master-slave area (KP_4 = Num_4).
-proportion_decrease = "Control-Shift-KP_4"
+# Decrease the proportion of master-slave area.
+proportion_decrease = "Mod1-Shift-H"
 
-# Moves focus to the next window (KP_2 = Num_2).
-window_next = "Control-Shift-KP_2"
+# Moves focus to the next window.
+window_next = "Mod4-Right"
 
-# Moves focus to the previous window (KP_8 = Num_8).
-window_previous = "Control-Shift-KP_8"
+# Moves focus to the previous window.
+window_previous = "Mod4-Left"
 
 # The commands above will affect all screens if this key is pressed in addition (Mod1 = Alt_L).
 mod_screens = "Mod1"
