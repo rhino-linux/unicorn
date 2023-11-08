@@ -1,0 +1,229 @@
+################################################################################
+#                                                                              #
+#           https://github.com/leukipp/cortile/blob/main/config.toml           #
+#                                                                              #
+################################################################################
+
+#################################### Tiling ####################################
+
+# Tiling will be enabled on application start if set to true (true | false).
+tiling_enabled = false
+
+# Initial tiling layout ("fullscreen" | "vertical-left" | "vertical-right" | "horizontal-top" | "horizontal-bottom").
+tiling_layout = "vertical-right"
+
+# An overlay window is displayed for this time period [ms] when the layout was changed (0 = disabled).
+tiling_gui = 1500
+
+# Menu entries in systray which shows the tiling state as icon ([] = disabled).
+# tiling_icon = [
+#   ['ACTION', 'TEXT'] = ['action strings from [keys] section', 'text to show in the menu'],
+#   ['', ''] = 'show a separator line',
+# ]
+tiling_icon = [
+    ['toggle', 'Enabled'],
+    ['', ''],
+    ['master_increase', 'Add Parent'],
+    ['master_decrease', 'Remove Parent'],
+    ['', ''],
+    ['slave_increase', 'Add Child'],
+    ['slave_decrease', 'Remove Child'],
+    ['', ''],
+    ['exit', 'Exit'],
+]
+
+#################################### Window ####################################
+
+# Regex RE2 syntax to ignore windows (WM_CLASS string can be found by running 'xprop WM_CLASS').
+# window_ignore = [
+#   ['WM_CLASS', 'WM_NAME'] = ['ignore all windows with this class', 'but allow those with this name']
+# ]
+window_ignore = [
+    ['nm.*', ''],
+    ['gcr.*', ''],
+    ['polkit.*', ''],
+    ['wrapper.*', ''],
+    ['lightdm.*', ''],
+    ['blueman.*', ''],
+    ['pavucontrol.*', ''],
+    ['firefox.*', '.*Mozilla Firefox'],
+]
+
+# Maximum number of allowed master windows (0 - 5).
+window_masters_max = 3
+
+# Maximum number of allowed slave windows (1 - 5).
+window_slaves_max = 3
+
+# How much space should be left between windows (0 - 100).
+window_gap_size = 10
+
+# Window decorations will be removed if set to false (true | false).
+window_decoration = true
+
+################################## Proportion ##################################
+
+# Initial division of master-slave area (0.0 - 1.0).
+proportion = 0.6
+
+# How much to increment/decrement master-slave area (0.0 - 1.0).
+proportion_step = 0.05
+
+# Minimum window width/height in proportion to workspace (0.0 - 1.0).
+proportion_min = 0.2
+
+##################################### Edge #####################################
+
+# Additional margin of the tiling area ([top, right, bottom, left]).
+edge_margin = [0, 0, 0, 0]
+
+# Width and height of a hot-corner area within the edge corners (0 - 100).
+edge_corner_size = 10
+
+# Width or height of a hot-corner area within the edge centers (0 - 100).
+edge_center_size = 100
+
+################################################################################
+[colors]                             # RGBA color values used for ui elements. #
+################################################################################
+
+# Layout window text color.
+gui_text = [255, 255, 255, 255]
+
+# Layout window background color.
+gui_background = [30, 30, 40, 255]
+
+# Layout slave client rectangle color.
+gui_client_slave = [58, 58, 78, 255]
+
+# Layout master client rectangle color.
+gui_client_master = [98, 98, 128, 255]
+
+# Systray icon background color.
+icon_background = [0, 0, 0, 0]
+
+# Systray icon foreground color.
+icon_foreground = [255, 255, 255, 255]
+
+################################################################################
+[keys]                            # Key symbols can be found by running 'xev'. #
+################################################################################
+
+# Enable tiling on the current screen (Home = Fn_Left).
+enable = "Control-Shift-Home"
+
+# Disable tiling on the current screen (End = Fn_Right).
+disable = "Control-Shift-End"
+
+# Disable tiling and restore windows on the current screen.
+restore = "Control-Shift-R"
+
+# Toggle between enable and disable on the current screen.
+toggle = "Control-Shift-T"
+
+# Cycles through next layouts (Next = Page_Down).
+cycle_next = "Control-Shift-Next"
+
+# Cycles through previous layouts (Prior = Page_Up).
+cycle_previous = "Control-Shift-Prior"
+
+# Activates the fullscreen layout (Space = Blank).
+layout_fullscreen = "Control-Shift-Space"
+
+# Activates the vertical-left layout (Left = Arrow_Left).
+layout_vertical_left = "Control-Shift-Left"
+
+# Activates the vertical-right layout (Right = Arrow_Right).
+layout_vertical_right = "Control-Shift-Right"
+
+# Activates the horizontal-top layout (Up = Arrow_Up).
+layout_horizontal_top = "Control-Shift-Up"
+
+# Activates the horizontal-bottom layout (Down = Arrow_Down).
+layout_horizontal_bottom = "Control-Shift-Down"
+
+# Make the active window a master.
+master_make = "Control-Shift-M"
+
+# Increase the number of masters (Plus = +).
+master_increase = "Control-Shift-Plus"
+
+# Decrease the number of masters (Minus = -).
+master_decrease = "Control-Shift-Minus"
+
+# Increase the number of slaves (KP_Add = Num_+).
+slave_increase = "Control-Shift-KP_Add"
+
+# Decrease the number of slaves (KP_Subtract = Num_-).
+slave_decrease = "Control-Shift-KP_Subtract"
+
+# Increase the proportion of master-slave area (KP_6 = Num_6).
+proportion_increase = "Control-Shift-KP_6"
+
+# Decrease the proportion of master-slave area (KP_4 = Num_4).
+proportion_decrease = "Control-Shift-KP_4"
+
+# Moves focus to the next window (KP_2 = Num_2).
+window_next = "Control-Shift-KP_2"
+
+# Moves focus to the previous window (KP_8 = Num_8).
+window_previous = "Control-Shift-KP_8"
+
+# The commands above will affect all screens if this key is pressed in addition (Mod1 = Alt_L).
+mod_screens = "Mod1"
+
+# The commands above will affect all workspaces if this key is pressed in addition (Mod4 = Super_L).
+mod_workspaces = "Mod4"
+
+################################################################################
+[corners]                   # Action strings from [keys] or external commands. #
+################################################################################
+
+# Corner at top left.
+top_left = "window_previous"
+
+# Corner at top center.
+top_center = ""
+
+# Corner at top right.
+top_right = "master_make"
+
+# Corner at center right.
+center_right = ""
+
+# Corner at bottom right.
+bottom_right = "proportion_increase"
+
+# Corner at bottom center.
+bottom_center = ""
+
+# Corner at bottom left.
+bottom_left = "proportion_decrease"
+
+# Corner at center left.
+center_left = ""
+
+################################################################################
+[systray]                   # Action strings from [keys] or external commands. #
+################################################################################
+
+# Icon left click with pointer.
+click_left = ""
+
+# Icon middle click with pointer.
+click_middle = "toggle"
+
+# Icon right click with pointer.
+click_right = ""
+
+# Icon vertical scroll up with pointer.
+scroll_up = "cycle_previous"
+
+# Icon vertical scroll down with pointer.
+scroll_down = "cycle_next"
+
+# Icon horizontal scroll left with pointer.
+scroll_left = "proportion_decrease"
+
+# Icon horizontal scroll right with pointer.
+scroll_right = "proportion_increase"
