@@ -84,6 +84,7 @@
       <property name="override" type="bool" value="true"/>
       <property name="&lt;Super&gt;d" type="string" value="xfdashboard"/>
       <property name="&lt;Super&gt;a" type="string" value="lightpad"/>
+      <property name="&lt;Super&gt;s" type="string" value="gapplication launch io.ulauncher.Ulauncher"/>
     </property>
   </property>
   <property name="xfwm4" type="empty">
