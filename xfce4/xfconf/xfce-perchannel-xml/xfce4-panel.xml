@@ -54,7 +54,7 @@
       <property name="known-items" type="array">
         <value type="string" value="chrome_status_icon_1"/>
         <value type="string" value="blueman"/>
-                <value type="string" value="nm-applet"/>
+        <value type="string" value="nm-applet"/>
       </property>
       <property name="hidden-items" type="array">
         <value type="string" value="nm-applet"/>
