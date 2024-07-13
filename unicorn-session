@@ -1,5 +1,5 @@
 #!/bin/bash
-XDG_SESSION_TYPE=x11 \
-DBUS_SESSION_BUS_ADDRESS="unix:path=$XDG_RUNTIME_DIR/bus" \
-PATH=$PATH:$HOME/.local/bin \
+export XDG_SESSION_TYPE=x11
+export $(dbus-launch)
+export PATH=$PATH:$HOME/.local/bin
 startunicorn
