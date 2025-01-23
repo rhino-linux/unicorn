@@ -1,3 +1,7 @@
+### Issues Tracker
+
+To report issues or propose new features for this repository, visit [our tracker](https://github.com/rhino-linux/tracker).
+
 # Rhino Linux XFCE4 Dotfiles
 Here are the XFCE4 Dotfiles. These files customize the interface to best suit your needs as a Rhino Linux user. Enjoy a start menu that lets you easily read man pages, search the web using DuckDuckGo, search for your files, read Wikipedia, run programs in a Teriminal, and open webpages at the press of the ENTER key. Use a terminal that is eye-catching. Experience a XFCE experience like never before!
 
