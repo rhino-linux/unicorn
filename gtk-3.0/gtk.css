@@ -84,9 +84,6 @@ https://github.com/GradienceTeam/Gradience
 @define-color dark_3 #3d3846;
 @define-color dark_4 #241f31;
 @define-color dark_5 #000000;
-.-vala-panel-appmenu-core > * {
-    min-width: 1430px;
-}
 
 .navigation-sidebar {
 background-color: #241f31;
