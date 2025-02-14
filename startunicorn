@@ -67,6 +67,9 @@ if [[ -z $XDG_DATA_DIRS ]]; then
 elif [[ "${XDG_DATA_DIRS##*:}" != "/usr/share" ]]; then
     XDG_DATA_DIRS="$XDG_DATA_DIRS:/usr/share"
 fi
+if [[ -f /usr/bin/snap ]]; then
+    XDG_DATA_DIRS="$XDG_DATA_DIRS:/var/lib/snapd/desktop"
+fi
 export XDG_DATA_DIRS
 
 if [[ -z "$XDG_CONFIG_DIRS" ]]; then
